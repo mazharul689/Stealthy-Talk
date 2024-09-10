@@ -1,0 +1,123 @@
+
+.table-responsive.menu {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    display: block;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .table-responsive.menu mat-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #757575;
+  }
+  .table-responsive.menu .mat-input-element {
+    color: #757575;
+    font-weight: 500;
+  }
+  .menu mat-table {
+    width: 100%;
+  }
+  // .menu .mat-row:nth-child(2n+1){
+  //   background-color: #ebebee;
+  // }
+  .selectedMenu .mat-column-menuId {
+    max-width: 20% !important;
+  }
+  .selectedMenu .mat-column-menuName {
+    max-width: 40% !important;
+  }
+  .selectedMenu .mat-column-isDisplay {
+    max-width: 20% !important;
+  }
+  .selectedMenu .mat-column-actions {
+    max-width: 20% !important;
+  }
+
+
+  //add role menu
+  .menu .mat-step-header {
+    pointer-events: none !important;
+  }
+  .menu .mat-checkbox {
+    pointer-events: none !important;
+  }
+  .menu .mat-input-element {
+    color: #f7f1f1;
+    font-weight: 500;
+  }
+  .menu .mat-form-field-appearance-legacy .mat-form-field-underline:nth-child(1) {
+    background-color: #fff;
+  
+  }
+  
+  .menu .mat-row:nth-child(2n+1){
+    background-color: #ebebee;
+  }
+  // .table-responsive.selectedMenu {
+  //   width: 100%;
+  //   max-width: 100%;
+  //   display: block;
+  //   background: #fff;
+  //   border-radius: 4px;
+  //   overflow: hidden;
+  // }
+  // .table-responsive.selectedMenu .mat-header-cell {
+  //   background-color: #3F51B5;
+  //   font-size: 13px;
+    // color: white;
+  // }
+  .table-responsive.selectedMenu mat-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .table-responsive.selectedMenu .mat-input-element {
+    color: #fff;
+    font-weight: 500;
+  }
+  .selectedMenu mat-table {
+    width: 100%;
+  }
+  .selectedMenu .mat-column-roleId {
+    max-width: 25% !important;
+  }
+  .selectedMenu .mat-column-roleName {
+    max-width: 50% !important;
+  }
+  .selectedMenu .mat-column-actions {
+    max-width: 25% !important;
+  }
+
+  .menu .mat-column-rowID {
+    max-width: 15% !important;
+  }
+  .menu .mat-column-menuId {
+    max-width: 25% !important;
+  }
+  .menu .mat-column-menuName {
+    max-width: 35% !important;
+  }
+  .menu .mat-column-isDisplay {
+    max-width: 25% !important;
+  }
+
+  .menu .example-section label {
+    padding-left: 2px;
+    padding-right: 5px;
+  }
+ 
+  .menu  mat-header-row.mat-header-row.cdk-header-row.ng-star-inserted {
+    padding-top: 5px;
+    background: #3F51B5;
+    border-radius: 0.25rem 0.25rem 0px 0px;
+  }
+  .menu label.example-margin.col-sm-12 {
+    color: #fff;
+    font-weight: 500;
+  }
+  .menu  mat-header-row.mat-header-row label {
+    color: #fff;
+  }

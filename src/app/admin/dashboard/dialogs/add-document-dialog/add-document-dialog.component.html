@@ -1,0 +1,49 @@
+<div class="addContainer" style="width: 850px;">
+    <div class="modalHeader m-0 p-0">
+        <h3>Add Document</h3>
+
+        <button mat-icon-button (click)="dialogRef.close()" aria-label="Close dialog">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <!-- <div mat-dialog-content> -->
+        <form [formGroup]="HFormGroup2">
+            <div class="row">
+                <div formArrayName="preDocRows"
+                    *ngFor="let item of HFormGroup2.get('preDocRows')['controls']; let i = index;  let last = last">
+                    <div class="row" [formGroupName]="i">
+                        <div class="col-5">
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Document Name</mat-label>
+                                <input matInput formControlName="documentName">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-4">
+                            <mat-form-field class="example-full-width">
+                                <ngx-mat-file-input formControlName="doc" placeholder="Choose File"
+                                    (change)="fileChangeEvent($event.target.files, i)">
+                                </ngx-mat-file-input>
+                                <mat-icon matSuffix [style.cursor]="'pointer'">cloud_upload</mat-icon>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-1" *ngIf="last">
+                            <button type="button" mat-mini-fab color="accent"
+                                aria-label="Example icon button with a plus one icon" (click)="addDocs()">
+                                <mat-icon>plus_one</mat-icon>
+                            </button>
+                        </div>
+                        <div class="col-1">
+                            <button *ngIf="i > 0" type="button" mat-mini-fab color="warn"
+                                aria-label="Example icon button with a plus one icon" (click)="removeDocs(i)">
+                                <mat-icon>exposure_neg_1</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button mat-raised-button (click)="onDocumentUpdate()" [disabled]="this.selectedFiles.length == 0" color="primary">Save</button>
+            </div>
+        </form>
+    <!-- </div> -->
+</div>

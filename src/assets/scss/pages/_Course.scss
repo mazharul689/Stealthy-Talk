@@ -1,0 +1,73 @@
+//New-Course
+.courseInfo .section-content .example-section {
+  height: 60px !important;
+}
+
+//All-Course
+.table-responsive.courses {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.courses .mat-header-cell {
+  // background-color: #3F51B5;
+  font-size: 14px !important;
+  color: white;
+}
+.body.all-course .data-container {
+    width: 450px;
+    min-width: 450px;
+    border: 1px solid #dcd6d6;
+    height: auto !important;
+}
+.table-responsive.courses mat-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+}
+.table-responsive.courses .mat-input-element {
+  color: #757575;
+  font-weight: 500;
+}
+
+.courses mat-table {
+  width: 100%;
+}
+.courses .mat-row:nth-child(2n+1){
+  background-color: #ebebee;
+}
+.courses .mat-column-courseCode {
+  max-width: 30% !important;
+}
+.courses .mat-column-courseName {
+  max-width: 50% !important;
+}
+.courses .mat-column-actions {
+  max-width: 20% !important;
+}
+
+.courses .mat-column-paymentplanname{
+  max-width: 40% !important;
+}
+.courses .mat-column-paymentplandesc{
+  max-width: 40% !important;
+}
+.courses .mat-column-paymentplanactions{
+  max-width: 20% !important;
+}
+
+.courses .focus{
+  // outline:1px solid #3F51B5;
+  // border: none;
+  color:#FFF;
+  background-color: #BCAAA4;
+}
+
+// .mat-table .mat-header-cell {
+//   font-size: 13px;
+//   background-color: #3F51B5 !important;
+// }

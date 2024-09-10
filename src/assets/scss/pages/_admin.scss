@@ -1,0 +1,406 @@
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: 500;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.white-cursor {
+  caret-color: white; /* Changes the color of the cursor */
+  color: white;
+}
+
+.mat-form-field-required-marker {
+  font-weight: bold;
+  color: red
+}
+.mat-form-field-underline {
+  background-color: #ddd9d9 !important;
+}
+.courseIntake .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: rgb(239, 243, 239) !important;
+ }
+ .units .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: rgb(239, 243, 239) !important;
+ }
+ .courseUnits .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: rgb(239, 243, 239) !important;
+ }
+ .courseIntake .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: rgb(239, 243, 239) !important;
+ }
+ .courses .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: rgb(239, 243, 239) !important;
+ }
+ .courseIntake .black .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: black !important;
+ }
+// .span {
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
+.asterisk::after {
+  font-weight: bold;
+  content: " *";
+  color: red
+}
+.mat-table .mat-header-cell {
+  font-size: 13px !important;
+  background-color: #3F51B5 !important;
+}
+
+.progress-inner{
+  background-color: rgb(255 72 171);
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+// .card mat-table mat-header-cell {
+//   font-size: 14px;
+//   font-weight: 500 !important;
+// }
+
+.highlight {
+  color: #3F51B5;
+}
+
+
+
+.nonHighlight {
+  color: black;
+}
+
+#content {
+  background-image: url('kingBack.png');
+  background-size: 100%;
+  width: 21cm;
+  height: 29.7cm;
+  color: black;
+  // line-height: 200px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  // box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+// .page {
+// background: white;
+// display: block;
+// margin: 0 auto;
+// margin-bottom: 0.5cm;
+// box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+// }
+// .page[size="A4"] {
+//   width: 21cm;
+//   height: 29.7cm;
+// }
+
+/* Certificate style */
+.certificate {
+  width: 800px;
+  height: 600px;
+  border: 2px solid black;
+  padding: 20px;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  // background-image: url("assets/images/certificcate/Template.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+/* Certificate header */
+.certificate .header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+/* Certificate content */
+.certificate .content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Certificate recipient */
+.certificate .recipient {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Certificate message */
+.certificate .message {
+  margin-bottom: 50px;
+}
+
+/* Certificate signature */
+.certificate .signature {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Certificate signature image */
+.certificate .signature img {
+  height: 100px;
+}
+
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+  background-color: #888;
+}
+
+// .table-row.highlight {
+//   background-color: #976666;
+// }
+
+.mat-expansion-panel {
+  background-color: #dde1f1;
+}
+
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: #3F51B5;
+  color: #fff;
+}
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  background-color: #3F51B5;
+}
+.custom-progress-bar .progress-inner {
+  background-color: #3F51B5 !important;
+}
+.custom-ckeditor {
+  width: 1000px; /* Set the desired width here */
+}
+
+.day-option {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) repeat(2, 90px);
+  gap: 10px;
+  align-items: center;
+}
+
+.day-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.time-picker {
+  width: 90px;
+}
+// .white-checkbox .mat-checkbox-inner-container {
+//   background-color: white; /* Sets the checkbox background color to white */
+// }
+
+.white-checkbox .mat-checkbox-frame {
+  border-color: white; /* Sets the checkbox border color to white */
+}
+
+.tab{
+  text-indent: 20px;
+}
+
+//certificate
+.rtoLabel {
+  width: 400px;
+  height: 60px;
+  font-size: 15px;
+  /* border: solid 1px #ccc; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  transform: translate3d(14px, 240px, 0px);
+}
+.certifyLabel {
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  /* border: solid 1px #ccc; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  transform: translate3d(14px, 240px, 0px);
+}
+.studentNameLabel {
+  width: 400px;
+  height: 60px;
+  font-size: 25px;
+  /* border: solid 1px #ccc; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  transform: translate3d(14px, 240px, 0px);
+}
+.requirementLabel {
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  /* border: solid 1px #ccc; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  transform: translate3d(14px, 240px, 0px);
+}
+.dateLabel {
+  width: 400px;
+  height: 60px;
+  font-size: 15px;
+  /* border: solid 1px #ccc; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  transform: translate3d(14px, 329px, 0px);
+}
+.certificateNoLabel {
+  width: 400px;
+  height: 60px;
+  font-size: 15px;
+  /* border: solid 1px #ccc; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  transform: translate3d(123px, 251px, 0px);
+}
+.labbel {
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  /* border: solid 1px #ccc; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.qualificationLogo {
+  width: 230px;
+  height: 60px;
+  font-size: 15px;
+  /* border: solid 1px #ccc; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background: #fff; */
+  border-radius: 4px;
+  margin-right: 25px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  // transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  transform: translate3d(-469px, 485px, 0px);
+}
+
+.example-box:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.example-boundary {
+  width: 210mm;
+  height: 297mm;
+  max-width: 100%;
+  border: dotted #ccc 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+  height: 250px;
+}

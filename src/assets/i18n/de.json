@@ -1,0 +1,118 @@
+{
+  "MENUITEMS": {
+    "MAIN": {
+      "TEXT": "-- Main"
+    },
+    "HOME": {
+      "TEXT": "Zuhause",
+      "LIST": {
+        "DASHBOARD1": "Dashboard 1",
+        "DASHBOARD2": "Dashboard 2",
+        "TEACHER-DASHBOARD": "Lehrerin Dashboard",
+        "STUDENT-DASHBOARD": "Studentin Dashboard"
+      }
+    },
+    "TEACHERS": {
+      "TEXT": "Lehrer",
+      "LIST": {
+        "ALL-TEACHERS": "Alle Lehrer",
+        "ADD-TEACHER": "Lehrer hinzufügen",
+        "EDIT-TEACHER": "Lehrer bearbeiten",
+        "ABOUT-TEACHER": "Über den Lehrer"
+      }
+    },
+    "STUDENTS": {
+      "TEXT": "Studentinnen",
+      "LIST": {
+        "ALL-STUDENTS": "Alle Schüler",
+        "ADD-STUDENT": "Schüler hinzufügen",
+        "EDIT-STUDENT": "Schüler bearbeiten",
+        "ABOUT-STUDENT": "Über Student"
+      }
+    },
+    "COURSES": {
+      "TEXT": "Kurse",
+      "LIST": {
+        "ALL-COURSES": "Alle Kurse",
+        "ADD-COURSE": "Kurs hinzufügen",
+        "EDIT-COURSE": "Kurs bearbeiten",
+        "ABOUT-COURSE": "Über den Kurs"
+      }
+    },
+    "LIBRARY": {
+      "TEXT": "Bibliothek",
+      "LIST": {
+        "ALL-LIBRARY": "Alle Bibliotheksbestände",
+        "ADD-LIBRARY": "Bibliotheks-Asset hinzufügen",
+        "EDIT-LIBRARY": "Bibliotheks-Asset bearbeiten"
+      }
+    },
+    "DEPARTMENTS": {
+      "TEXT": "Abteilungen",
+      "LIST": {
+        "ALL-DEPARTMENT": "Alle Abteilungen",
+        "ADD-DEPARTMENT": "Abteilung hinzufügen",
+        "EDIT-DEPARTMENT": "Abteilung bearbeiten"
+      }
+    },
+    "STAFF": {
+      "TEXT": "Mitarbeiterin",
+      "LIST": {
+        "ALL-STAFF": "Die ganze Belegschaft",
+        "ADD-STAFF": "Mitarbeiter hinzufügen",
+        "EDIT-STAFF": "Mitarbeiter bearbeiten",
+        "ABOUT-STAFF": "Über Mitarbeiter"
+      }
+    },
+    "HOLIDAY": {
+      "TEXT": "Urlaub",
+      "LIST": {
+        "ALL-HOLIDAY": "Alle Feiertage",
+        "ADD-HOLIDAY": "Urlaub hinzufügen",
+        "EDIT-HOLIDAY": "Urlaub bearbeiten"
+      }
+    },
+    "FEES": {
+      "TEXT": "Gebühren",
+      "LIST": {
+        "ALL-FEES": "Alle Gebühren",
+        "ADD-FEES": "Gebühren hinzufügen",
+        "EDIT-FEES": "Gebühren bearbeiten",
+        "FEE-RECEIPT": "Gebührenbeleg"
+      }
+    },
+    "TEACHER": {    
+      "TEXT": "Lehrerin",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "LECTURES": "Vorträge",
+        "LEAVE-REQUEST": "Anfrage hinterlassen",
+        "EXAM-SCHEDULE": "Prüfungsplan",
+        "SETTINGS": "Rahmen"
+      }
+    },
+    "STUDENT": {    
+      "TEXT": "Studentin",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "HOMEWORK": "Hausaufgaben",
+        "LEAVE-REQUEST": "Anfrage hinterlassen",
+        "TIME-TABLE": "Zeitplan",
+        "SETTINGS": "Rahmen"
+      }
+    },
+
+    "APPS": {
+      "TEXT": "-- Apps"
+    },
+    "CALENDAR": {
+      "TEXT": "Kalender"
+    },
+    "TASK": {
+      "TEXT": "Aufgabe"
+    },
+    "CONTACTS": {
+      "TEXT": "Kontakte"
+    }
+  }
+}

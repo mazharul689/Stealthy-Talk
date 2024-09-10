@@ -1,0 +1,307 @@
+.newCourseUnit .mat-step-header {
+  pointer-events: none !important;
+}
+.newCourseUnit .body.table-responsive.classSetup .mat-checkbox {
+  pointer-events: none !important;
+}
+.table-responsive.selectedCourse {
+  width: 100%;
+  max-width: 100%;
+  // border: 1px solid #ccc;
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.table-responsive.selectedCourse mat-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+.table-responsive.selectedCourse .mat-input-element {
+  color: #fff;
+  font-weight: 500;
+}
+.selectedCourse mat-table {
+  width: 100%;
+}
+.selectedCourse .mat-column-courseCode {
+  max-width: 25% !important;
+}
+.selectedCourse .mat-column-courseName {
+  max-width: 50% !important;
+}
+.selectedCourse .mat-column-actions {
+  max-width: 25% !important;
+}
+// invoice
+.selectedCourse .mat-column-rowId {
+  max-width: 10% !important;
+}
+.selectedCourse .mat-column-paymentRule {
+  max-width: 50% !important;
+}
+.selectedCourse .mat-column-amount {
+  max-width: 25% !important;
+}
+.selectedCourse .mat-column-dueDate {
+  max-width: 25% !important;
+}
+
+//Additional outcome
+.selectedCourse .mat-column-addRowId{
+  max-width: 10% !important;
+}
+.selectedCourse .mat-column-addUnitCodeName{
+  max-width: 50% !important;
+}
+// .selectedCourse .mat-column-addOutcomeNational{
+//   max-width: 20% !important;
+// }
+.selectedCourse .mat-column-addStartDate{
+  max-width: 20% !important;
+}
+.selectedCourse .mat-column-addEndDate{
+  max-width: 20% !important;
+}
+
+.selectedCourse .mat-column-add1RowId{
+  max-width: 10% !important;
+}
+.selectedCourse .mat-column-add1UnitCodeName{
+  max-width: 50% !important;
+}
+// .selectedCourse .mat-column-add1OutcomeNational{
+//   max-width: 20% !important;
+// }
+.selectedCourse .mat-column-add1StartDate{
+  max-width: 20% !important;
+}
+.selectedCourse .mat-column-add1EndDate{
+  max-width: 20% !important;
+}
+// .newCourseUnit mat-label {
+//   font-size: 14px;
+//   font-weight: 500;
+//   color: #080808;
+// }
+// .newCourseUnit .mat-input-element {
+//   color: #f7f1f1;
+//   font-weight: 500;
+// }
+.table-responsive.newCourseUnit .mat-input-element {
+  color: #f1efef;
+  font-weight: 500;
+  font-size: 17px;
+}
+.newCourseUnit .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: rgb(239, 243, 239) !important;
+ }
+.newCourseUnit .mat-form-field-appearance-legacy .mat-form-field-underline:nth-child(1) {
+  background-color: #fff;
+
+}
+.newCourseUnit .card .body .col-xs-12, .card .body .col-sm-12, .card .body .col-md-12, .card .body .col-lg-12 {
+  margin-bottom: 20px !important;
+}
+
+.newCourseUnit mat-table {
+  width: 100%;
+}
+.newCourseUnit .mat-row:nth-child(2n+1){
+  background-color: #ebebee;
+}
+.newCourseUnit .mat-column-rowID {
+  max-width: 10% !important;
+}
+.newCourseUnit .mat-column-clientId {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-firstName {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-lastName {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-courseName {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-courseName1 {
+  max-width: 50% !important;
+}
+.newCourseUnit .mat-column-email {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-unitCode {
+  max-width: 10% !important;
+}
+.newCourseUnit .mat-column-unitCode2 {
+  max-width: 15% !important;
+}
+.newCourseUnit .mat-column-unitName {
+  max-width: 70% !important;
+}
+.newCourseUnit .mat-column-unitName1 {
+  max-width: 40% !important;
+}
+.newCourseUnit .mat-column-unitType {
+  max-width: 15% !important;
+}
+.newCourseUnit .mat-column-vetFlag {
+  max-width: 15% !important;
+}
+.newCourseUnit .mat-column-AVETMISS {
+  max-width: 15% !important;
+}
+.newCourseUnit .mat-column-scheduledNominalHours {
+  max-width: 30% !important;
+}
+.newCourseUnit .mat-column-disability {
+  max-width: 10% !important;
+}
+.newCourseUnit .mat-sort-header-arrow {
+  color: #fff;
+}
+
+//classsetup dialog
+.newCourseUnit .mat-column-day {
+  max-width: 34% !important;
+}
+.newCourseUnit .mat-column-sttime {
+  max-width: 33% !important;
+}
+.newCourseUnit .mat-column-entime {
+  max-width: 33% !important;
+}
+
+//bulk-outcome
+.newCourseUnit .mat-column-rowID {
+  max-width: 10% !important;
+}
+.newCourseUnit .mat-column-unitCode1 {
+  max-width: 10% !important;
+}
+.newCourseUnit .mat-column-bulkClientId {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-bulkName {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-bulkEmail {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-bulkstDate {
+  max-width: 18% !important;
+}
+.newCourseUnit .mat-column-bulkEnDate {
+  max-width: 18% !important;
+}
+
+//dashboard
+.newCourseUnit .mat-column-dashborardUnit {
+  max-width: 80% !important;
+}
+.newCourseUnit .mat-column-dashborardUnitType {
+  max-width: 20% !important;
+}
+
+//certificate outcome
+.newCourseUnit .mat-column-units {
+  max-width: 30% !important;
+}
+.newCourseUnit .mat-column-outcomeNational {
+  max-width: 25% !important;
+}
+.newCourseUnit .mat-column-stDate {
+  max-width: 10% !important;
+}
+.newCourseUnit .mat-column-enDate {
+  max-width: 10% !important;
+}
+.newCourseUnit .mat-column-hours {
+  max-width: 15% !important;
+}
+
+
+.newCourseUnit .example-section label {
+  padding-left: 2px;
+  padding-right: 5px;
+}
+.newCourseUnit .mat-header-cell {
+  color: rgb(252 249 249);
+}
+.newCourseUnit  mat-header-row.mat-header-row.cdk-header-row.ng-star-inserted {
+  padding-top: 0px;
+  background: #3F51B5;
+  border-radius: 0.25rem 0.25rem 0px 0px;
+}
+.newCourseUnit label.example-margin.col-sm-12 {
+  color: #fff;
+  font-weight: 500;
+}
+.newCourseUnit  mat-header-row.mat-header-row label {
+  color: #fff;
+}
+
+//all-courseUnits
+.table-responsive.courseUnits {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+// .courseUnits .mat-header-cell {
+//   background-color: #3F51B5;
+//   font-size: 13px;
+  // color: white;
+// }
+
+.table-responsive.courseUnits mat-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+}
+.table-responsive.courseUnits .mat-input-element {
+  color: #faf7f7;
+  font-weight: 500;
+}
+.courseUnits mat-table {
+  width: 100%;
+}
+.courseUnits .mat-column-unitCode {
+  max-width: 20% !important;
+}
+.courseUnits .mat-column-unitName {
+  max-width: 40% !important;
+}
+.courseUnits .mat-column-unitType {
+  max-width: 15% !important;
+}
+.courseUnits .mat-column-AVETMISS {
+  max-width: 15% !important;
+}
+.courseUnits .mat-column-actions {
+  max-width: 10% !important;
+}
+
+.selectedCourse .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: rgb(239, 243, 239) !important;
+ }
+//class attendance
+.selectedCourse .mat-column-clientId1 {
+  max-width: 25% !important;
+}
+.selectedCourse .mat-column-fullName {
+  max-width: 25% !important;
+}
+.selectedCourse .mat-column-classDate {
+  max-width: 25% !important;
+}
+.selectedCourse .mat-column-attendance {
+  max-width: 25% !important;
+}

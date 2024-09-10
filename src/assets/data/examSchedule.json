@@ -1,0 +1,68 @@
+[{
+    "id": "001",
+    "subject": "Mathematics",
+    "class": "Class 1",
+    "date": "2018-02-10T14:22:18Z",
+    "time": "10:30 AM",
+    "duration": "3 hours",
+    "roomNo": "101",
+    "totalMarks": "100",
+    "reqMarks": "35"
+  },
+  {
+    "id": "002",
+    "subject": "Science",
+    "class": "Class 1",
+    "date": "2018-02-11T14:22:18Z",
+    "time": "10:30 AM",
+    "duration": "3 hours",
+    "roomNo": "103",
+    "totalMarks": "100",
+    "reqMarks": "35"
+  },
+  {
+    "id": "003",
+    "subject": "Geography",
+    "class": "Class 1",
+    "date": "2018-02-12T14:22:18Z",
+    "time": "10:30 AM",
+    "duration": "3 hours",
+    "roomNo": "102",
+    "totalMarks": "100",
+    "reqMarks": "35"
+  },
+  {
+    "id": "004",
+    "subject": "Chemistry",
+    "class": "Class 1",
+    "date": "2018-02-13T14:22:18Z",
+    "time": "10:30 AM",
+    "duration": "3 hours",
+    "roomNo": "104",
+    "totalMarks": "100",
+    "reqMarks": "35"
+  },
+  {
+    "id": "005",
+    "subject": "Biology",
+    "class": "Class 1",
+    "date": "2018-02-15T14:22:18Z",
+    "time": "10:30 AM",
+    "duration": "3 hours",
+    "roomNo": "101",
+    "totalMarks": "100",
+    "reqMarks": "35"
+  },
+  {
+    "id": "006",
+    "subject": "Economics",
+    "class": "Class 1",
+    "date": "2018-02-16T14:22:18Z",
+    "time": "10:30 AM",
+    "duration": "3 hours",
+    "roomNo": "105",
+    "totalMarks": "100",
+    "reqMarks": "35"
+  }
+
+]

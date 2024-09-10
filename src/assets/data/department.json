@@ -1,0 +1,162 @@
+[
+  {
+    "id": "001",
+    "no": "B123451",
+    "dName": "mechanical",
+    "hod": "Pooja Sarma",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "1987",
+    "sCapacity": "125"
+  },
+  {
+    "id": "002",
+    "no": "B123452",
+    "dName": "civil",
+    "hod": "Sanjay Chohan",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "1990",
+    "sCapacity": "300"
+  },
+  {
+    "id": "003",
+    "no": "B123453",
+    "dName": "science",
+    "hod": "Sarah Smith",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2015",
+    "sCapacity": "100"
+  },
+  {
+    "id": "004",
+    "no": "B123454",
+    "dName": "mathematics",
+    "hod": "Ashton Cox",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2002",
+    "sCapacity": "300"
+  },
+  {
+    "id": "005",
+    "no": "B123455",
+    "dName": "computer",
+    "hod": "Rajesh Malhotra",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2000",
+    "sCapacity": "250"
+  },
+  {
+    "id": "006",
+    "no": "B123456",
+    "dName": "civil",
+    "hod": "Sanjana Patil",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "1990",
+    "sCapacity": "200"
+  },
+  {
+    "id": "007",
+    "no": "B123457",
+    "dName": "automobile",
+    "hod": "Airi Satou",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2000",
+    "sCapacity": "125"
+  },
+  {
+    "id": "008",
+    "no": "B123458",
+    "dName": "civil",
+    "hod": "Pooja Sarma",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2002",
+    "sCapacity": "130"
+  },
+  {
+    "id": "009",
+    "no": "B123459",
+    "dName": "mathematics",
+    "hod": "Sarah Smith",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2010",
+    "sCapacity": "100"
+  },
+  {
+    "id": "010",
+    "no": "B1234510",
+    "dName": "management",
+    "hod": "Rajesh Malhotra",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "1990",
+    "sCapacity": "125"
+  },
+  {
+    "id": "011",
+    "no": "B1234511",
+    "dName": "computer",
+    "hod": "Sanjay Chohan",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2002",
+    "sCapacity": "300"
+  },
+  {
+    "id": "012",
+    "no": "B1234512",
+    "dName": "science",
+    "hod": "Pooja Sarma",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "1987",
+    "sCapacity": "100"
+  },
+  {
+    "id": "013",
+    "no": "B1234513",
+    "dName": "science",
+    "hod": "Sanjana Patil",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2015",
+    "sCapacity": "250"
+  },
+  {
+    "id": "014",
+    "no": "B1234514",
+    "dName": "automobile",
+    "hod": "Airi Satou",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2000",
+    "sCapacity": "200"
+  },
+  {
+    "id": "015",
+    "no": "B1234515",
+    "dName": "mathematics",
+    "hod": "Ashton Cox",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "2010",
+    "sCapacity": "130"
+  },
+  {
+    "id": "016",
+    "no": "B1234516",
+    "dName": "mechanical",
+    "hod": "Sarah Smith",
+    "phone": "(123)456789",
+    "email": "test@example.com",
+    "sYear": "1990",
+    "sCapacity": "250"
+  }
+]

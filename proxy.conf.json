@@ -1,0 +1,7 @@
+{
+  "/stego_image/*": {
+    "target": "http://localhost:3307",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

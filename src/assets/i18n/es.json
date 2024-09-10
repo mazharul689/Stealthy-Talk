@@ -1,0 +1,118 @@
+{
+  "MENUITEMS": {
+    "MAIN": {
+      "TEXT": "-- Principal"
+    },
+    "HOME": {
+      "TEXT": "Casa",
+      "LIST": {
+        "DASHBOARD1": "Tablero 1",
+        "DASHBOARD2": "Tablero 2",
+        "TEACHER-DASHBOARD": "Panel del profesor",
+        "STUDENT-DASHBOARD": "Tablero del estudiante"
+      }
+    },
+    "TEACHERS": {
+      "TEXT": "Profesoras",
+      "LIST": {
+        "ALL-TEACHERS": "Todas las maestras",
+        "ADD-TEACHER": "Agregar profesora",
+        "EDIT-TEACHER": "Profesora de edición",
+        "ABOUT-TEACHER": "Sobre el profesor"
+      }
+    },
+    "STUDENTS": {
+      "TEXT": "Estudiantes",
+      "LIST": {
+        "ALL-STUDENTS": "Todas las estudiantes",
+        "ADD-STUDENT": "Agregar estudiante",
+        "EDIT-STUDENT": "Editar alumno",
+        "ABOUT-STUDENT": "Sobre la estudiante"
+      }
+    },
+    "COURSES": {
+      "TEXT": "Cursos",
+      "LIST": {
+        "ALL-COURSES": "Todos los cursos",
+        "ADD-COURSE": "Agregar curso",
+        "EDIT-COURSE": "Editar curso",
+        "ABOUT-COURSE": "Acerca del curso"
+      }
+    },
+    "LIBRARY": {
+      "TEXT": "Biblioteca",
+      "LIST": {
+        "ALL-LIBRARY": "Toda la biblioteca",
+        "ADD-LIBRARY": "Agregar biblioteca",
+        "EDIT-LIBRARY": "Editar biblioteca"
+      }
+    },
+    "DEPARTMENTS": {
+      "TEXT": "Departamentos",
+      "LIST": {
+        "ALL-DEPARTMENT": "Todos los departamentos",
+        "ADD-DEPARTMENT": "Agregar departamento",
+        "EDIT-DEPARTMENT": "Editar departamento"
+      }
+    },
+    "STAFF": {
+      "TEXT": "Personal",
+      "LIST": {
+        "ALL-STAFF": "Todo el personal",
+        "ADD-STAFF": "Agregar personal",
+        "EDIT-STAFF": "Editar personal",
+        "ABOUT-STAFF": "Sobre el personal"
+      }
+    },
+    "HOLIDAY": {
+      "TEXT": "Fiesta",
+      "LIST": {
+        "ALL-HOLIDAY": "Todas las vacaciones",
+        "ADD-HOLIDAY": "Agregar feriado",
+        "EDIT-HOLIDAY": "Editar vacaciones"
+      }
+    },
+    "FEES": {
+      "TEXT": "Tarifa",
+      "LIST": {
+        "ALL-FEES": "Todas las tarifas",
+        "ADD-FEES": "Agregar tarifas",
+        "EDIT-FEES": "Editar tarifas",
+        "FEE-RECEIPT": "Recibo de tarifa"
+      }
+    },
+
+    "TEACHER": {    
+      "TEXT": "Profesora",
+      "LIST": {
+        "DASHBOARD": "Tablero",
+        "LECTURES": "Conferencias",
+        "LEAVE-REQUEST": "Dejar petición",
+        "EXAM-SCHEDULE": "Horario de exámenes",
+        "SETTINGS": "Configuraciones"
+      }
+    },
+    "STUDENT": {    
+      "TEXT": "Alumna",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "HOMEWORK": "Deberes",
+        "LEAVE-REQUEST": "Dejar petición",
+        "TIME-TABLE": "Tabla de tiempos",
+        "SETTINGS": "Configuraciones"
+      }
+    },
+    "APPS": {
+      "TEXT": "-- Aplicaciones"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendario"
+    },
+    "TASK": {
+      "TEXT": "Tarea"
+    },
+    "CONTACTS": {
+      "TEXT": "Contactos"
+    }
+  }
+}

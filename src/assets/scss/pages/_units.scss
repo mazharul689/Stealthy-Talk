@@ -1,0 +1,133 @@
+//all-units
+.table-responsive.units {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.table-responsive.units mat-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+}
+.table-responsive.units .mat-input-element {
+  color: #ffffff;
+  font-weight: 500;
+}
+.units mat-table {
+  width: 100%;
+}
+
+// .units .mat-header-cell {
+//   background-color: #3F51B5;
+//   font-size: 13px !important;
+// }
+.units .mat-row:nth-child(2n+1){
+  background-color: #ebebee;
+}
+.units .mat-column-unitCode {
+  max-width: 20% !important;
+}
+.units .mat-column-unitName {
+  max-width: 60% !important;
+}
+.units .mat-column-actions1 {
+  max-width: 20% !important;
+}
+
+//Users
+.units .mat-column-name {
+  max-width: 30% !important;
+}
+.units .mat-column-roleName {
+  max-width: 20% !important;
+}
+.units .mat-column-email {
+  max-width: 40% !important;
+}
+// .units .mat-column-isActive {
+//   max-width: 30% !important;
+// }
+.units .mat-column-actions {
+  max-width: 10% !important;
+}
+
+//finance
+.units .mat-column-itemsname{
+  max-width: 40%;
+}
+.units .mat-column-defaultamount{
+  max-width: 40%;
+}
+.units .mat-column-financeactions{
+  max-width: 20%;
+}
+
+.units .mat-column-financemodelname{
+  max-width: 40%;
+}
+.units .mat-column-tutionfee{
+  max-width: 40%;
+}
+.units .mat-column-financemodelactions{
+  max-width: 20%;
+}
+
+.units .mat-column-paymentplanname{
+  max-width: 40%;
+}
+.units .mat-column-paymentplandesc{
+  max-width: 40%;
+}
+.units .mat-column-paymentplanactions{
+  max-width: 20%;
+}
+
+.units .mat-column-amounttype{
+  max-width: 40%;
+}
+.units .mat-column-amounttypeisactive{
+  max-width: 40%;
+}
+.units .mat-column-amounttypeactions{
+  max-width: 20%;
+}
+
+.units .mat-column-ruletype{
+  max-width: 40%;
+}
+.units .mat-column-ruletypeisactive{
+  max-width: 40%;
+}
+.units .mat-column-ruletypeactions{
+  max-width: 20%;
+}
+
+//Staffs
+.units .mat-column-staffId {
+  max-width: 30% !important;
+}
+.units .mat-column-firstName {
+  max-width: 30% !important;
+}
+.units .mat-column-lastName {
+  max-width: 30% !important;
+}
+// .units .mat-column-email {
+//   max-width: 30% !important;
+// }
+.units .mat-column-isactive {
+  max-width: 30% !important;
+}
+.units .mat-column-actions {
+  max-width: 10% !important;
+}
+::ng-deep .table-responsive .table-head .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: #fff !important;
+}
+::ng-deep .table-responsive .table-head .mat-focused .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: #fff !important;
+}

@@ -1,0 +1,58 @@
+<section class="content">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="breadcrumb breadcrumb-style ">
+            <li class="breadcrumb-item">
+              <h4 class="page-title">Dashboard</h4>
+            </li>
+            <li class="breadcrumb-item bcrumb-1">
+              <a routerLink="/admin/dashboard/main">
+                <i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="breadcrumb-item active">Main</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="info-box7 l-bg-purple order-info-box7">
+          <div class="info-box7-block">
+            <h6 class="m-b-20">Total User</h6>
+            <h2 class="text-end"><i class="fas fa-users pull-left"></i><span>{{this.totalUser}}</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="info-box7 l-bg-green order-info-box7">
+          <div class="info-box7-block">
+            <h6 class="m-b-20">Total Encryption</h6>
+            <h2 class="text-end"><i class="fa fa-book pull-left"></i><span>{{this.totalEncryption}}</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="info-box7 l-bg-orange order-info-box7">
+          <div class="info-box7-block">
+            <h6 class="m-b-20">Total Decryption</h6>
+            <h2 class="text-end"><i class="	fas fa-graduation-cap pull-left"></i><span>{{ this.totalDecryption }}</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <mat-expansion-panel [expanded]="panelExpanded">
+            <mat-expansion-panel-header>
+              All Stego Image ({{this.totalEncryption}})
+            </mat-expansion-panel-header>
+            <div class="body">
+
+            </div>
+          </mat-expansion-panel>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,218 @@
+<div class="addContainer" style="width: 850px;">
+    <div class="modalHeader m-0 p-0">
+        <h3>Detailed E-mail</h3>
+
+        <button mat-icon-button (click)="dialogRef.close()" aria-label="Close dialog">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <div mat-dialog-content>
+        <div class="student-dia">
+            <div class="row mx-0">
+                <div class="col-12">
+                    <div class="row info">
+                        <div class="col-2">
+                            <span><strong>Type</strong></span>
+                        </div>
+                        <div class="col-10">
+                            <span>: {{data.type}}</span>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="col-2">
+                            <span><strong>From</strong></span>
+                        </div>
+                        <div class="col-10">
+                            <span>: {{data.from}}</span>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="col-2">
+                            <span><strong>To</strong></span>
+                        </div>
+                        <div class="col-10">
+                            <span>: {{data.to}}</span>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="col-2">
+                            <span><strong>Subject</strong></span>
+                        </div>
+                        <div class="col-10">
+                            <span>: {{data.subject}}</span>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="col-2">
+                            <span><strong>Message</strong></span>
+                        </div>
+                        <div class="col-10">
+                            <ckeditor [editor]="Editor" (ready)="onReady($event)" [disabled]="true"
+                        data={{data.html_body}} ></ckeditor>
+                        </div>
+                    </div>
+                    <div class="row info" *ngIf="data.email_attachment">
+                        <div class="col-2">
+                            <span><strong>Attachemnts</strong></span>
+                        </div>
+                        <div class="col-10">
+                            <span>
+                                <button type="button" mat-icon-button color="primary" (click)="download(data.email_attachment)">
+                                    <i class="fa fa-download"></i>
+                                </button>
+                                {{data.fileName}}<br>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row mx-0">
+                <div class="col-6">
+                    <h5>Current Address</h5>
+                    <div class="row info">
+                        <div class="col-4">
+                            <strong>Flat / Unit Details</strong>
+                            <p class="text-muted">{{studentInfo.flatUnitDetails}}</p>
+                        </div>
+                        <div class="col-4">
+                            <strong>Street Number</strong>
+                            <p class="text-muted">{{studentInfo.streetNumber}}</p>
+                        </div>
+                        <div class="col-4">
+                            <strong>Street Name</strong>
+                            <p class="text-muted">{{studentInfo.streetName}}</p>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="col-12">
+                            <strong>Building / Property Name</strong>
+                            <p class="text-muted">{{studentInfo.buildingName}}</p>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="col-4">
+                            <strong>Suburb</strong>
+                            <p class="text-muted">{{studentInfo.suburb}}</p>
+                        </div>
+                        <div class="col-4">
+                            <strong>State</strong>
+                            <p class="text-muted">{{studentInfo.stateName}}</p>
+                        </div>
+                        <div class="col-4">
+                            <strong>Postcode</strong>
+                            <p class="text-muted">{{studentInfo.postCode}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h5>Postal Address</h5>
+                    <div class="row info">
+                        <div class="col-4">
+                            <strong>Flat / Unit Details</strong>
+                            <p class="text-muted">{{studentpostal.flatUnitDetails}}</p>
+                        </div>
+                        <div class="col-4">
+                            <strong>Street Number</strong>
+                            <p class="text-muted">{{studentpostal.streetNumber}}</p>
+                        </div>
+                        <div class="col-4">
+                            <strong>Street Name</strong>
+                            <p class="text-muted">{{studentpostal.streetName}}</p>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="col-12">
+                            <strong>Building / Property Name</strong>
+                            <p class="text-muted">{{studentpostal.buildingName}}</p>
+                        </div>
+                    </div>
+                    <div class="row info">
+                        <div class="col-4">
+                            <strong>Suburb</strong>
+                            <p class="text-muted">{{studentpostal.suburb}}</p>
+                        </div>
+                        <div class="col-4">
+                            <strong>State</strong>
+                            <p class="text-muted">{{studentpostal.stateName}}</p>
+                        </div>
+                        <div class="col-4">
+                            <strong>Postcode</strong>
+                            <p class="text-muted">{{studentpostal.postCode}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+
+<!-- <div dir="ltr">Check email with attachments<br clear="all">
+    <div><br></div><span class="gmail_signature_prefix">-- </span><br>
+    <div dir="ltr" class="gmail_signature" data-smartmail="gmail_signature">
+        <div dir="ltr">
+            <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><br></p>
+            <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><br style="color:rgb(34,34,34)"></p>
+            <div dir="ltr" align="left" style="color:rgb(34,34,34);margin-left:0pt">
+                <table style="border:none;border-collapse:collapse">
+                    <colgroup>
+                        <col width="153">
+                        <col width="196">
+                    </colgroup>
+                    <tbody>
+                        <tr style="height:108.75pt">
+                            <td
+                                style="border-right:2.99479pt solid rgb(0,121,107);vertical-align:top;padding:5pt;overflow:hidden">
+                                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                                        style="font-size:11pt;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><span
+                                            style="border:none;display:inline-block;overflow:hidden;width:139px;height:139px"><img
+                                                src="https://lh6.googleusercontent.com/79HOvISSh6FXZCeWRazuVYva868h-RK1gJxamhNmJYNvmspE87fvtHaHG1Qk3MLNb9YPUjSld3iwz7mJcJhdJ1vaGy3rRJ6TTcMKk3opLm783O21GxMIm1c-JVdgtMnYLFhPBUri"
+                                                width="139" height="139"
+                                                style="margin-left:0px;margin-top:0px"></span></span></p>
+                            </td>
+                            <td
+                                style="border-left:2.99479pt solid rgb(0,121,107);vertical-align:top;padding:5pt;overflow:hidden">
+                                <p dir="ltr" style="line-height:1.44;margin-top:0pt;margin-bottom:0pt"><span
+                                        style="font-size:12pt;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:700;vertical-align:baseline;white-space:pre-wrap"><br></span>
+                                </p>
+                                <p dir="ltr" style="line-height:1.44;margin-top:0pt;margin-bottom:0pt"><span
+                                        style="font-size:12pt;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:700;vertical-align:baseline;white-space:pre-wrap">Md.
+                                        Mazharul Islam</span></p>
+                                <p dir="ltr" style="line-height:1.44;margin-top:0pt;margin-bottom:0pt"><span
+                                        style="font-size:11pt;font-family:Arial;color:rgb(0,121,107);background-color:transparent;font-weight:700;vertical-align:baseline;white-space:pre-wrap">Daffodil
+                                        Institute of IT</span></p>
+                                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                                        style="font-size:12pt;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:700;vertical-align:baseline;white-space:pre-wrap">01782208540</span>
+                                </p>
+                                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><a
+                                        href="https://www.facebook.com/mazharul.islam689" style="color:rgb(17,85,204)"
+                                        target="_blank"><span
+                                            style="font-size:11pt;font-family:Arial;background-color:transparent;font-weight:700;vertical-align:baseline;white-space:pre-wrap"><span
+                                                style="border:none;display:inline-block;overflow:hidden;width:36px;height:35px"><img
+                                                    src="https://lh4.googleusercontent.com/9T-EkRYVURR3s7uxwVeAt4SIuYQSiWXVJnQgS0-mMknAnx9iQpZ3BKmGEwyBJrxi2Zcb2k_pHFLDkKzBHlT77-vIVu7d9zxj9Boni0AGXdT3EXVTlZLcD5QxboYa-8YcZt0oL1qr"
+                                                    width="36" height="35"
+                                                    style="margin-left:0px;margin-top:0px"></span></span></a><a
+                                        href="https://join.skype.com/invite/Bm2pes2cuGNX" style="color:rgb(17,85,204)"
+                                        target="_blank"><span
+                                            style="font-size:11pt;font-family:Arial;background-color:transparent;font-weight:700;vertical-align:baseline;white-space:pre-wrap"><span
+                                                style="border:none;display:inline-block;overflow:hidden;width:36px;height:33px"><img
+                                                    src="https://lh6.googleusercontent.com/j0nNUkhBE3qgLuDlKDcApWdzvC4vZtxhBRQAIjFZTsOE5AmrEpPUBWBc5rpbbQnBOjisgTS0WGUiRTUO_4LJ4GCSlQCnQTJtL65RSzWGd22RglQHQKYF7ln61hmPWt7urkJLKtZK"
+                                                    width="36" height="35.96367305751766"
+                                                    style="margin-left:0px"></span></span></a><a
+                                        href="https://www.instagram.com/mazharul_islam_hridoy/"
+                                        style="color:rgb(17,85,204)" target="_blank"><span
+                                            style="font-size:11pt;font-family:Arial;background-color:transparent;font-weight:700;vertical-align:baseline;white-space:pre-wrap"><span
+                                                style="border:none;display:inline-block;overflow:hidden;width:35px;height:32px"><img
+                                                    src="https://lh4.googleusercontent.com/4Ec2M-L05NFUb6TKt8Oa-PIaH-cbuxv_Ktr2V-xieHpR7R1KmecHuiKSnsIR0TRnTyf5U4RmL9zHs4fFWEHvraZrYaQB_D8kLJVrjUr80fTrWEAZ9hEQioYYSQBhMPhPbWEZkEbj"
+                                                    width="35" height="32"
+                                                    style="margin-left:0px;margin-top:0px"></span></span></a></p>
+                                <div><br></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> -->

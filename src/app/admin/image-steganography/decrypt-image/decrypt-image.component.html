@@ -1,0 +1,75 @@
+<section class="content">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="breadcrumb breadcrumb-style ">
+            <li class="breadcrumb-item">
+              <h4 class="page-title">Decrypt Image</h4>
+            </li>
+            <li class="breadcrumb-item bcrumb-1">
+              <a routerLink="/admin/dashboard/main">
+                <i class="fas fa-home"></i>Home</a>
+            </li>
+            <li class="breadcrumb-item bcrumb-2">
+              <a href="#" onClick="return false;">Image Steganography</a>
+            </li>
+            <li class="breadcrumb-item active">Decrypt Image</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix newStudent">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="body">
+            <div class="container">
+              <form [formGroup]="HFormGroup1">
+                <div class="courseInfo">
+                  <div class="row">
+                    <span class="section-heading"><i class='fas fa-bars'></i>Image Encryption</span>
+                  </div>
+                  <div class="section-content">
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width mb-3">
+                          <mat-label>Subject</mat-label>
+                          <input matInput formControlName="subject" type="text" disabled>
+                          <mat-error *ngIf="HFormGroup1.get('subject').hasError('required')">
+                            Subject is required
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('subject').hasError('maxlength')">
+                            Maximum length is 30 characters
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                      <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width">
+                          <ngx-mat-file-input formControlName="image_data" placeholder="Select Cover Image" (change)="onImageSelect($event)">
+                          </ngx-mat-file-input>
+                          <mat-icon matSuffix [style.cursor]="'pointer'">cloud_upload</mat-icon>
+                        </mat-form-field>
+                      </div> -->
+                    </div>
+                    <div *ngIf="imageUrl">
+                      <img [src]="imageUrl" alt="Selected Image" class="selected-image" style="width:300px;">
+                  </div>
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <ckeditor formControlName="msg" [editor]="Editor" (ready)="onReady($event)"
+                            data="Start writing...."></ckeditor>
+                      </div>
+                    </div>
+                    <div>
+                      <!-- <button mat-raised-button color="primary" (click)="encryptImage()">Encrypt Image</button> -->
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+img {
+  height: 150px;
+  // width: 300px;
+  width: 150px;
+}
+.logoimg {
+  display: block;
+  margin: 0 auto;
+}
+.flex-sb-m {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,157 @@
+<section class="content">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="breadcrumb breadcrumb-style ">
+            <li class="breadcrumb-item">
+              <h4 class="page-title">New User</h4>
+            </li>
+            <li class="breadcrumb-item bcrumb-1">
+              <a routerLink="/admin/dashboard/main">
+                <i class="fas fa-home"></i>Dashboard</a>
+            </li>
+            <li class="breadcrumb-item bcrumb-2">
+              <a href="#" onClick="return false;">Users</a>
+            </li>
+            <li class="breadcrumb-item active">New</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix newStudent">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>New User</h2>
+          </div>
+          <div class="body">
+            <div class="container">
+              <!-- <div class="row">
+                                  <div *ngIf="requiredError.isError" class="alert alert-danger col-6 m-auto" id="closebtn">
+                                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                  <strong>Warning!</strong> {{ requiredError.errorMessage }}
+                                  </div>
+                              </div> -->
+              <form [formGroup]="HFormGroup1">
+                <div class="courseInfo">
+                  <div class="row">
+                    <span class="section-heading"><i class='fas fa-bars'></i> User
+                      Information</span>
+                  </div>
+                  <div class="section-content">
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width mb-3">
+                          <mat-label>First Name</mat-label>
+                          <input matInput formControlName="firstName" type="text" required>
+                          <mat-error *ngIf="HFormGroup1.get('firstName').hasError('required')">
+                            First name is required
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('firstName').hasError('maxlength')">
+                            Maximum length is 30 characters
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width mb-3">
+                          <mat-label>Last Name</mat-label>
+                          <input matInput formControlName="lastName" type="text" required>
+                          <mat-error *ngIf="HFormGroup1.get('lastName').hasError('required')">
+                            Last name is required
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('lastName').hasError('maxlength')">
+                            Maximum length is 30 characters
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width mb-3">
+                          <mat-label>Phone Number</mat-label>
+                          <input matInput formControlName="phone" type="text" required>
+                          <mat-error *ngIf="HFormGroup1.get('phone').hasError('required')">
+                            phone is required
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('phone').hasError('maxlength')">
+                            Maximum length is 14 characters
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('phone').hasError('minlength')">
+                            Maximum length is 11 characters
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width mb-3">
+                          <mat-label>Email</mat-label>
+                          <input matInput formControlName="email" type="text" required>
+                          <mat-error *ngIf="HFormGroup1.get('email').hasError('required')">
+                            Email is required
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('email').hasError('maxlength')">
+                            Maximum length is 100 characters
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('email').hasError('pattern')">
+                            Invalid email
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width mb-3">
+                          <mat-label>User Name</mat-label>
+                          <input matInput formControlName="username" type="text" required>
+                          <mat-error *ngIf="HFormGroup1.get('username').hasError('required')">
+                            User name is required
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('username').hasError('maxlength')">
+                            Maximum length is 30 characters
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('username').hasError('minlength')">
+                            Maximum length is 6 characters
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width mb-3">
+                          <mat-label>Role Name</mat-label>
+                          <mat-select formControlName="role_id" required>
+                            <mat-option *ngFor="let role of roles" [value]="role.role_id">
+                              {{role.role_name }}
+                            </mat-option>
+                          </mat-select>
+                          <mat-error *ngIf="HFormGroup1.get('role_id').hasError('required')">
+                            Role name is required
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+                        <mat-form-field class="example-full-width mb-3">
+                          <mat-label>Password</mat-label>
+                          <input matInput formControlName="password" type="text" required>
+                          <mat-error *ngIf="HFormGroup1.get('password').hasError('required')">
+                            Password is required
+                          </mat-error>
+                          <mat-error *ngIf="HFormGroup1.get('password').hasError('pattern')">
+                            Password should contain a capital letter, a small letter, a special character and a number
+                          </mat-error>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div>
+                      <button mat-raised-button color="primary" (click)="createUser()">Create User</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
