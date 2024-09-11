@@ -26,13 +26,17 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatStepperModule } from '@angular/material/stepper';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { UserRequestsComponent } from './user-requests/user-requests.component';
+import { EditUserRequestsComponent } from './edit-user-requests/edit-user-requests.component';
 
 
 @NgModule({
   declarations: [
     AllUsersComponent,
     NewUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    UserRequestsComponent,
+    EditUserRequestsComponent
   ],
   imports: [
     CommonModule,
