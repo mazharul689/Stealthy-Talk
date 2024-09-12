@@ -54,8 +54,11 @@ export class EditUserComponent implements OnInit {
       console.log(this.HFormGroup1.value)
     })
   }
-  Update(){
-
+  Update() {
+    this.apiService.postAPI(`edituser.php?id=${this.userId}`, this.HFormGroup1.value).subscribe((data) => {
+      console.log(data)
+      this.router.navigate(['/admin/users/all-users'])
+    });
   }
 
 }

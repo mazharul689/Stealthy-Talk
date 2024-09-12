@@ -71,7 +71,7 @@ export class EditUserRequestsComponent implements OnInit {
       this.HFormGroup1.value.status_id = parseInt(this.HFormGroup1.value.status_id)
       this.apiService.postAPI(`adduserfromrequest.php`, this.HFormGroup1.value).subscribe((data) => {
         console.log(data)
-        this.router.navigate(['/admin/users/all-users'])
+        this.router.navigate(['/admin/users/user-requests'])
       })
     }
 
