@@ -67,7 +67,8 @@ export class AllEncryptedImageComponent implements OnInit {
   }
 
   sendMessage(id){
-    alert('Under Construction')
+    // alert('Under Construction')
+    this.router.navigate([`/admin/stego/all-users/${id}`])
   }
   decryptMessage(id){
     this.router.navigate([`/admin/stego/decrypt-image/${id}`])

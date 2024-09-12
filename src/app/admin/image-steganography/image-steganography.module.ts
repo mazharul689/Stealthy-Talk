@@ -27,13 +27,15 @@ import { EncryptImageComponent } from './encrypt-image/encrypt-image.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { DecryptImageComponent } from './decrypt-image/decrypt-image.component';
 import { AllEncryptedImageComponent } from './all-encrypted-image/all-encrypted-image.component';
+import { AllUsersComponent } from './all-users/all-users.component';
 
 
 @NgModule({
   declarations: [
     EncryptImageComponent,
     DecryptImageComponent,
-    AllEncryptedImageComponent
+    AllEncryptedImageComponent,
+    AllUsersComponent
   ],
   imports: [
     CommonModule,

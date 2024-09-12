@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EncryptImageComponent } from './encrypt-image/encrypt-image.component';
 import { DecryptImageComponent } from './decrypt-image/decrypt-image.component';
 import { AllEncryptedImageComponent } from './all-encrypted-image/all-encrypted-image.component';
+import { AllUsersComponent } from './all-users/all-users.component';
 const routes: Routes = [
   {
     path: 'encrypt-image',
@@ -20,6 +21,10 @@ const routes: Routes = [
     path: 'all-encrypted-image',
     component: AllEncryptedImageComponent
   },
+  {
+    path: 'all-users/:id',
+    component: AllUsersComponent
+  }
   // {
   //   path: 'new-user',
     // component: NewUserComponent
