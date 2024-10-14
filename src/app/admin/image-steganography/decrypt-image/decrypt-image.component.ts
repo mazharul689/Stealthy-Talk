@@ -56,6 +56,9 @@ export class DecryptImageComponent implements OnInit {
       let temp: any = data
       this.magic = temp.message
       console.log(this.magic)
+      this.HFormGroup1.patchValue({
+        msg: this.magic
+      })
     })
   }
 
@@ -81,9 +84,9 @@ export class DecryptImageComponent implements OnInit {
       (data: Blob) => {
         this.decryptImage(data).then(decryptedMsg => {
           console.log('Decrypted Message:', decryptedMsg);
-          this.HFormGroup1.patchValue({
-            msg: decryptedMsg
-          })
+          // this.HFormGroup1.patchValue({
+          //   msg: decryptedMsg
+          // })
           this.decryptedMsg = decryptedMsg;
         }).catch(error => {
           console.error('Error decrypting image:', error);

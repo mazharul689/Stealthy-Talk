@@ -9,8 +9,8 @@ import { Observable } from 'rxjs';
 export class ApiService {
 
   constructor(private http: HttpClient) { }
-  private baseUrl = 'http://localhost/stego_image';
-  private imageUrl = 'http://localhost/stego_image';
+  private baseUrl = 'http://localhost/stealthy_talk';
+  private imageUrl = 'http://localhost/stealthy_talk';
 
   public getAPI(url) {
     return this.http.get(`${this.baseUrl}/${url}`);

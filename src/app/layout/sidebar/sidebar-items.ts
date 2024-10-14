@@ -122,7 +122,7 @@ export const ROUTES: RouteInfo[] = [
     role: ['Soldier', 'Admin'],
     submenu: [
       {
-        path: '',
+        path: '/admin/inbox/all-messages',
         title: 'All Message',
         moduleName: 'inbox',
         iconType: '',

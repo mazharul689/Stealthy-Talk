@@ -17,16 +17,6 @@ const routes: Routes = [
         loadChildren: () =>
           import('./admin/admin.module').then((m) => m.AdminModule),
       },
-      // {
-      //   path: 'teacher',
-      //   loadChildren: () =>
-      //     import('./teacher/teacher.module').then((m) => m.TeacherModule),
-      // },
-      // {
-      //   path: 'student',
-      //   loadChildren: () =>
-      //     import('./student/student.module').then((m) => m.StudentModule),
-      // },
     ],
   },
   {
@@ -37,14 +27,6 @@ const routes: Routes = [
         (m) => m.AuthenticationModule
       ),
   },
-  // {
-  //   path: 'qr',
-  //   component: AuthLayoutComponent,
-  //   loadChildren: () =>
-  //     import('./auth/auth.module').then(
-  //       (m) => m.AuthModule
-  //     ),
-  // },
   { path: '**', component: Page404Component },
 ];
 @NgModule({

@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AllMessageComponent } from './all-message/all-message.component';
 const routes: Routes = [
-  // {
-  //   path: 'encrypt-image',
-  //   component: EncryptImageComponent
-  // },
+  {
+    path: 'all-messages',
+    component: AllMessageComponent,
+  },
   // {
   //   path: 'decrypt-image',
   //   component: DecryptImageComponent
@@ -24,4 +25,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ImageSteganographyRoutingModule { }
+export class InboxRoutingModule { }

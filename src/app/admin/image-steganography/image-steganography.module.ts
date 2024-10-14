@@ -38,9 +38,8 @@ import { AllUsersComponent } from './all-users/all-users.component';
     AllUsersComponent
   ],
   imports: [
-    CommonModule,
-    CommonModule,
     ImageSteganographyRoutingModule,
+    CommonModule,
     FormsModule,
     CKEditorModule,
     ReactiveFormsModule,

@@ -131,3 +131,17 @@
 ::ng-deep .table-responsive .table-head .mat-focused .mat-form-field-appearance-legacy .mat-form-field-underline {
   background-color: #fff !important;
 }
+
+//all users
+.units .mat-column-rowID {
+  max-width: 5% !important;
+}
+.units .mat-column-name {
+  max-width: 40% !important;
+}
+.units .mat-column-email {
+  max-width: 35% !important;
+}
+.units .mat-column-roleName {
+  max-width: 20% !important;
+}
