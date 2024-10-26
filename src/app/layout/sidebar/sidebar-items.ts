@@ -15,6 +15,33 @@ export const ROUTES: RouteInfo[] = [
     role: ['Admin', 'Soldier'],
     submenu: [],
   },
+  // {
+  //   path: '',
+  //   title: 'Profile',
+  //   moduleName: 'profile',
+  //   iconType: 'material-icons-two-tone',
+  //   icon: 'person',
+  //   class: 'menu-toggle',
+  //   groupTitle: false,
+  //   badge: '',
+  //   badgeClass: '',
+  //   role: ['Soldier', 'Admin'],
+  //   submenu: [
+  //     {
+  //       path: '/admin/profile/edit-profile',
+  //       title: 'Edit Profile',
+  //       moduleName: 'profile',
+  //       iconType: '',
+  //       icon: '',
+  //       class: 'ml-menu',
+  //       groupTitle: false,
+  //       badge: '',
+  //       badgeClass: '',
+  //       role: [''],
+  //       submenu: [],
+  //     },
+  //   ],
+  // },
   {
     path: '',
     title: 'Users',
@@ -82,7 +109,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: [
       {
         path: '/admin/stego/all-encrypted-image',
-        title: 'All Encrypted Data',
+        title: 'All Embedde Data',
         moduleName: 'image-steganography',
         iconType: '',
         icon: '',
@@ -95,7 +122,7 @@ export const ROUTES: RouteInfo[] = [
       },
       {
         path: '/admin/stego/encrypt-image',
-        title: 'Encrypt Image',
+        title: 'Embed Image',
         moduleName: 'image-steganography',
         iconType: '',
         icon: '',

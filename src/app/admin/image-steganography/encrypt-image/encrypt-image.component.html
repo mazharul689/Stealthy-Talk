@@ -5,7 +5,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <ul class="breadcrumb breadcrumb-style ">
             <li class="breadcrumb-item">
-              <h4 class="page-title">Encrypt Image</h4>
+              <h4 class="page-title">Embed Image</h4>
             </li>
             <li class="breadcrumb-item bcrumb-1">
               <a routerLink="/admin/dashboard/main">
@@ -14,7 +14,7 @@
             <li class="breadcrumb-item bcrumb-2">
               <a href="#" onClick="return false;">Image Steganography</a>
             </li>
-            <li class="breadcrumb-item active">Encrypt Image</li>
+            <li class="breadcrumb-item active">Embed Image</li>
           </ul>
         </div>
       </div>
@@ -30,6 +30,12 @@
                     <span class="section-heading"><i class='fas fa-bars'></i>Image Encryption</span>
                   </div>
                   <div class="section-content">
+                    <div class="row">
+                      <div *ngIf="errors.isError" class="col-4 alert alert-danger m-auto text-center" id="closebtn">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <strong>Warning!</strong> {{ errors.errorMessage }}
+                      </div>
+                    </div>
                     <div class="row">
                       <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
                         <mat-form-field class="example-full-width mb-3">
@@ -63,7 +69,7 @@
                       </div>
                     </div>
                     <div>
-                      <button mat-raised-button color="primary" (click)="encryptImage()">Encrypt Image</button>
+                      <button mat-raised-button color="primary" (click)="encryptImage()">Embed Image</button>
                     </div>
                   </div>
                 </div>
@@ -75,98 +81,3 @@
     </div>
   </div>
 </section>
-<!-- <section class="content">
-  <div class="container-fluid">
-    <div class="block-header">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <ul class="breadcrumb breadcrumb-style ">
-            <li class="breadcrumb-item">
-              <h4 class="page-title">Encrypt Image</h4>
-            </li>
-            <li class="breadcrumb-item bcrumb-1">
-              <a routerLink="/admin/dashboard/main">
-                <i class="fas fa-home"></i>Home</a>
-            </li>
-            <li class="breadcrumb-item bcrumb-2">
-              <a href="#" onClick="return false;">Image Steganography</a>
-            </li>
-            <li class="breadcrumb-item active">Encrypt Image</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row clearfix newStudent">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-          <div class="body">
-            <div class="container">
-              <div class="tab-pane active" id="encode">
-                <div>
-                  <h2 style="color: white;">Encode message</h2>
-                  <p class="alert alert-info" style="color: red; font-family: 'Montserrat', sans-serif;">
-                    To encode a message into an image, choose the image you want to use, enter your text and hit the
-                    <strong>Encode</strong> button. <br />
-                    Save the last image, it will contain your hidden message. <br />
-                    Remember, the more text you want to hide, the larger the image has to be. In case you chose an image
-                    that is
-                    too small to hold your message you will be informed.<br /><br />
-                    Neither the image nor the message you hide will be at any moment transmitted over the web, all the
-                    magic
-                    happens within your browser.
-                  </p>
-                  <form [formGroup]="HFormGroup1">
-                    <div class="form-group">
-                      <input class="form-control" type="file" name="baseFile" onchange="previewEncodeImage()">
-                    </div>
-
-
-                    <div class="form-group">
-                      <textarea class="form-control message" rows="3" placeholder="Enter your message here"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                      <button class="encode btn btn-default pull-right" onclick="encodeMessage()" style="display: block;
-          width: 100%;
-          border: none;
-          background-color: #04AA6D;
-          padding: 14px 28px;
-          font-size: 25px;
-          color:aliceblue;
-
-          cursor: pointer;
-          text-align: center;">Encode</button>
-                    </div>
-                  </form>
-                  <div class="clearfix"></div>
-                </div>
-
-                <div class="error" style="display: none;"></div>
-                <div class="binary" style="display: none;">
-                  <h3 style="color: red;">Binary representation of your message</h3>
-                  <textarea class="form-control message" style="word-wrap:break-word;">
-      </textarea>
-                </div>
-                <div class="images" style="display: none;">
-                  <div class="original" style="display: none;">
-                    <h3 style="color: red;">Original</h3>
-                    <canvas></canvas>
-                  </div>
-                  <div class="nulled" style="display: none;">
-                    <h3 style="color: red;">Normalized</h3>
-                    <canvas></canvas>
-                  </div>
-                  <div class="message" style="display: none;">
-                    <h3 style="color: red;">Message hidden in image (right click <span
-                        class="glyphicon glyphicon-arrow-right"></span> save as)</h3>
-                    <canvas></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->

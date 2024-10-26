@@ -22,6 +22,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./inbox/inbox.module').then((m) => m.InboxModule),
   },
+  {
+    path: 'edit-profile',
+    loadChildren: () =>
+      import('./profile/profile.module').then((m) => m.ProfileModule),
+  },
 ];
 
 @NgModule({

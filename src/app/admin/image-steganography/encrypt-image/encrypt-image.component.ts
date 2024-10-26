@@ -24,7 +24,7 @@ export class EncryptImageComponent implements OnInit {
   public Editor = ClassicEditor;
   userInfo: any;
   imageUrl: any;
-
+  errors = { isError: false, errorMessage: ""};
   constructor(
     private fb: FormBuilder,
     private apiService: ApiService,
@@ -123,7 +123,12 @@ export class EncryptImageComponent implements OnInit {
           ctx.drawImage(img, 0, 0);
           const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
           const data = imageData.data;
-
+          var show = document.getElementById('closebtn')
+          if ((msg.length * 8) > (canvas.width * canvas.height * 3)) {
+            window.scroll(0, 0);
+            this.errors = { isError: true, errorMessage: "Text too long for chosen image...." };
+            return;
+          }
           let binaryMsg = msg.split('').map(char => char.charCodeAt(0).toString(2).padStart(8, '0')).join('');
           binaryMsg += '00000000'; // Add a null character to signify the end of the message
 
@@ -158,36 +163,6 @@ export class EncryptImageComponent implements OnInit {
     }
   }
 
-
-
-
-
-
-
-
-  // addStegoImage(image: Blob){
-  //   let body = this.HFormGroup1.value
-  //   body.image_data = image
-  //   delete body.msg;
-  //   console.log(body)
-  //   this.apiService.postAPI('addstegoimage.php', body).subscribe((data) =>{
-  //     console.log(data)
-  //   })
-  // }
-  // addStegoImage(image: File) {
-  //   let body = this.HFormGroup1.value;
-  //   delete body.msg;
-  //   let file: File = this.HFormGroup1.value.image_data
-  //   let formData = new FormData();
-  //   formData.append('image_data', file);
-  //   for (let key in body) {
-  //     formData.append(key, body[key]);
-  //   }
-  //   console.log(formData);
-  //   this.apiService.postAPI('addstegoimage.php', formData).subscribe((data) => {
-  //     console.log(data);
-  //   });
-  // }
   addStegoImage(imageData: Blob) {
     const file = new File([imageData], 'uploaded_image.png', { type: imageData.type });
     console.log(file)
@@ -250,7 +225,7 @@ export class EncryptImageComponent implements OnInit {
     // Check if the image is big enough to hide the message
     if ((text.length * 8) > (width * height * 3)) {
       // You can handle this error condition in your Angular application as per your requirements
-      console.error("Text too long for chosen image....");
+      alert("Text too long for chosen image....");
       return;
     }
 

@@ -40,7 +40,7 @@ export class AllEncryptedImageComponent implements OnInit {
   }
 
   addNew(){
-    this.router.navigate(['/admin/users/new-user']);
+    this.router.navigate(['/admin/stego/encrypt-image']);
   }
   refresh(){
     this.loadData()
@@ -59,7 +59,7 @@ export class AllEncryptedImageComponent implements OnInit {
   }
 
   getAllStegos(){
-    this.apiService.getAPI('getstegoimages.php').subscribe((data) => {
+    this.apiService.getAPI("getstegoimages.php").subscribe((data) => {
       let stegos: any = data;
       this.dataSource.data = stegos
       return data
