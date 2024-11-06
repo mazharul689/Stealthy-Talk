@@ -47,6 +47,7 @@
     "chart.js": "^2.9.4",
     "core-js": "^3.12.1",
     "echarts": "^4.9.0",
+    "file-saver": "^2.0.5",
     "mat-progress-buttons": "^9.2.1",
     "mat-timepicker": "^5.1.4",
     "moment": "^2.29.4",
@@ -68,6 +69,7 @@
     "sweetalert2": "^11.0.8",
     "tslib": "^2.2.0",
     "util": "^0.12.4",
+    "xlsx": "^0.18.5",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

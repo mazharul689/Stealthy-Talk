@@ -7,7 +7,8 @@ import { MatSort } from '@angular/material/sort'
 import { fromEvent } from 'rxjs';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms'
 import { MatDialog } from '@angular/material/dialog'
-
+import * as XLSX from 'xlsx';
+import { saveAs } from 'file-saver';
 export interface users {
   name
   email
@@ -74,12 +75,31 @@ export class AllUsersComponent implements OnInit {
   getUsers(){
     this.apiService.getAPI('getusers.php').subscribe((data) => {
       this.users = data
+      this.downloadAsExcel(this.users)
       for(let i in this.users){
         this.users[i].name = data[i].firstName + ' ' + data[i].lastName
       }
       this.dataSource.data = this.users
       return data
     })
+  }
+
+  downloadAsExcel(data: any) {
+    // Create a worksheet
+    const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(data);
+
+    // Create a workbook and add the worksheet
+    const workbook: XLSX.WorkBook = {
+      Sheets: { 'Students': worksheet },
+      SheetNames: ['Students']
+    };
+
+    // Convert to a binary Excel file
+    const excelBuffer: any = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+
+    // Save the file
+    const blob: Blob = new Blob([excelBuffer], { type: 'application/octet-stream' });
+    saveAs(blob, 'students_data.xlsx');
   }
   addNew(){
     this.router.navigate(['/admin/users/new-user']);
